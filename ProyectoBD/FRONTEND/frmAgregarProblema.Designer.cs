@@ -1,7 +1,7 @@
 ﻿
 namespace ProyectoBD.FRONTEND
 {
-    partial class frmAgregarProble
+    partial class frmAgregarProblema
     {
         /// <summary>
         /// Required designer variable.

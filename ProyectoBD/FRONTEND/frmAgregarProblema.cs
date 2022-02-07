@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoBD.FRONTEND
 {
-    public partial class frmAgregarProble : Form
+    public partial class frmAgregarProblema : Form
     {
-        public frmAgregarProble()
+        public frmAgregarProblema()
         {
             InitializeComponent();
         }

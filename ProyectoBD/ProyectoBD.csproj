@@ -46,12 +46,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="BACKEND\clsDaoCategorias.cs" />
+    <Compile Include="BACKEND\clsDaoProblemas.cs" />
+    <Compile Include="FRONTEND\frmCategorias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FRONTEND\frmCategorias.Designer.cs">
+      <DependentUpon>frmCategorias.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRONTEND\frmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRONTEND\frmMenuPrincipal.Designer.cs">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRONTEND\frmAgregarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRONTEND\frmAgregarCategoria.Designer.cs">
+      <DependentUpon>frmAgregarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRONTEND\frmAgregarProblema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRONTEND\frmAgregarProblema.Designer.cs">
+      <DependentUpon>frmAgregarProblema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRONTEND\frmProblemas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRONTEND\frmProblemas.Designer.cs">
+      <DependentUpon>frmProblemas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POJOS\clsCategorias.cs" />
+    <Compile Include="POJOS\clsProblemas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -76,5 +104,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

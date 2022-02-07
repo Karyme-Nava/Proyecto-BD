@@ -1,0 +1,9 @@
+C:\Users\Karyme Nava\source\repos\ProyectoBD\ProyectoBD\bin\Debug\ProyectoBD.exe.config
+C:\Users\Karyme Nava\source\repos\ProyectoBD\ProyectoBD\bin\Debug\ProyectoBD.exe
+C:\Users\Karyme Nava\source\repos\ProyectoBD\ProyectoBD\bin\Debug\ProyectoBD.pdb
+C:\Users\Karyme Nava\source\repos\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csprojAssemblyReference.cache
+C:\Users\Karyme Nava\source\repos\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.Properties.Resources.resources
+C:\Users\Karyme Nava\source\repos\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csproj.GenerateResource.cache
+C:\Users\Karyme Nava\source\repos\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csproj.CoreCompileInputs.cache
+C:\Users\Karyme Nava\source\repos\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.exe
+C:\Users\Karyme Nava\source\repos\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.pdb
