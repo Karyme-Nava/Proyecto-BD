@@ -83,7 +83,7 @@ namespace ProyectoBD.BACKEND
             MySqlConnection conexion = new MySqlConnection();
             conexion.ConnectionString = ""; //Actualizar
             conexion.Open();
-
+            // TODO: Corregir ISSUE #3
             string cadena = "update Problemas "
                 + "set Nombre = @nombre, Descripcion = @descripcion, Solucion = @solucion, "
                 + "IDCategoria = @idCategoria, Puntaje = @puntaje, NivelDificultad = @nivelDificultad, "

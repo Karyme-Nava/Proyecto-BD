@@ -51,15 +51,17 @@ namespace ProyectoBD.FRONTEND
             this.rbPublico = new System.Windows.Forms.RadioButton();
             this.label10 = new System.Windows.Forms.Label();
             this.dtFecha = new System.Windows.Forms.DateTimePicker();
-            this.cbBD = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.txtFuente = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtBD = new System.Windows.Forms.TextBox();
             this.gbVisibilidad.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
-            this.btnGuardar.Location = new System.Drawing.Point(365, 531);
+            this.btnGuardar.Location = new System.Drawing.Point(688, 531);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(144, 35);
             this.btnGuardar.TabIndex = 13;
@@ -153,6 +155,7 @@ namespace ProyectoBD.FRONTEND
             // 
             // cbCategoria
             // 
+            this.cbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCategoria.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
             this.cbCategoria.FormattingEnabled = true;
             this.cbCategoria.Items.AddRange(new object[] {
@@ -182,8 +185,14 @@ namespace ProyectoBD.FRONTEND
             // 
             // cbDificultad
             // 
+            this.cbDificultad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDificultad.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
             this.cbDificultad.FormattingEnabled = true;
+            this.cbDificultad.Items.AddRange(new object[] {
+            "Basico",
+            "Medio",
+            "Dificil",
+            "Muy dificil"});
             this.cbDificultad.Location = new System.Drawing.Point(152, 406);
             this.cbDificultad.Name = "cbDificultad";
             this.cbDificultad.Size = new System.Drawing.Size(230, 29);
@@ -201,8 +210,13 @@ namespace ProyectoBD.FRONTEND
             // 
             // cbGestor
             // 
+            this.cbGestor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGestor.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
             this.cbGestor.FormattingEnabled = true;
+            this.cbGestor.Items.AddRange(new object[] {
+            "MySQL",
+            "SQL Server",
+            "PostgreSQL"});
             this.cbGestor.Location = new System.Drawing.Point(565, 406);
             this.cbGestor.Name = "cbGestor";
             this.cbGestor.Size = new System.Drawing.Size(230, 29);
@@ -270,15 +284,6 @@ namespace ProyectoBD.FRONTEND
             this.dtFecha.Size = new System.Drawing.Size(230, 28);
             this.dtFecha.TabIndex = 27;
             // 
-            // cbBD
-            // 
-            this.cbBD.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
-            this.cbBD.FormattingEnabled = true;
-            this.cbBD.Location = new System.Drawing.Point(150, 457);
-            this.cbBD.Name = "cbBD";
-            this.cbBD.Size = new System.Drawing.Size(230, 29);
-            this.cbBD.TabIndex = 29;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -289,12 +294,40 @@ namespace ProyectoBD.FRONTEND
             this.label9.TabIndex = 28;
             this.label9.Text = "Base de datos:";
             // 
+            // txtFuente
+            // 
+            this.txtFuente.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFuente.Location = new System.Drawing.Point(434, 520);
+            this.txtFuente.Name = "txtFuente";
+            this.txtFuente.Size = new System.Drawing.Size(158, 28);
+            this.txtFuente.TabIndex = 31;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(356, 527);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(67, 21);
+            this.label11.TabIndex = 30;
+            this.label11.Text = "Fuente:";
+            // 
+            // txtBD
+            // 
+            this.txtBD.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBD.Location = new System.Drawing.Point(152, 460);
+            this.txtBD.Name = "txtBD";
+            this.txtBD.Size = new System.Drawing.Size(230, 28);
+            this.txtBD.TabIndex = 32;
+            // 
             // frmAgregarProblema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(865, 578);
-            this.Controls.Add(this.cbBD);
+            this.Controls.Add(this.txtBD);
+            this.Controls.Add(this.txtFuente);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.dtFecha);
             this.Controls.Add(this.label10);
@@ -350,7 +383,9 @@ namespace ProyectoBD.FRONTEND
         private System.Windows.Forms.RadioButton rbPublico;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DateTimePicker dtFecha;
-        private System.Windows.Forms.ComboBox cbBD;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtFuente;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtBD;
     }
 }
