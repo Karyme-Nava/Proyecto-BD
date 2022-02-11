@@ -100,7 +100,7 @@ namespace ProyectoBD.BACKEND
         public List<clsCategorias> ListaCategorias()
         {
             MySqlConnection conexion = new MySqlConnection();
-            conexion.ConnectionString = ""; //Actualizar
+            conexion.ConnectionString = "server=8.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=10875"; //Actualizar
             conexion.Open();
 
             string cadena = "select * from Categorias";

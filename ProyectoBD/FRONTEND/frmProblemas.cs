@@ -18,6 +18,8 @@ namespace ProyectoBD.FRONTEND
         {
             InitializeComponent();
             this.parent = parent;
+            // Inicializar tabla
+
         }
         public frmProblemas()
         {

@@ -22,6 +22,17 @@ namespace ProyectoBD.FRONTEND
             InitializeComponent();
             this.parent = parent;
             this.type = type;
+            //Inicializar el combobox de categorias
+            clsDaoCategorias daoCategorias = new clsDaoCategorias();
+            List<clsCategorias> categorias = daoCategorias.ListaCategorias();
+            List<Tuple<Int32, String>> listaCat = new List<Tuple<int, string>>();
+            foreach (clsCategorias categoria in categorias)
+            {
+                listaCat.Add(Tuple.Create<Int32, string>(categoria.IDCategoria, categoria.NombreCategoria));
+            }
+            cbCategoria.DataSource = listaCat;
+            cbCategoria.ValueMember = "Item1";
+            cbCategoria.DisplayMember = "Item2";            
         }
 
         public frmAgregarProblema()
@@ -78,10 +89,10 @@ namespace ProyectoBD.FRONTEND
                 return null;
             }
 
-            string categoria = "";
+            int categoria = 0;
             try
             {
-                categoria = cbCategoria.SelectedItem.ToString();
+                categoria = Convert.ToInt32(cbCategoria.SelectedValue);
             }catch (Exception ex)
             {
                 MessageBox.Show("Debe seleccionar una categoría", "Datos incorrectos");
@@ -160,8 +171,7 @@ namespace ProyectoBD.FRONTEND
             problema.Nombre = nombre;
             problema.Descripcion = descripcion;
             problema.Solucion = solucion;
-            // TODO: CONSEGUIR EL ID DE LA CATEGORIA
-            problema.IDCategoria = 1;
+            problema.IDCategoria = categoria; //TODO: Checar con mas casos
             problema.Puntaje = puntaje;
             problema.NivelDificultad = dificultad;
             problema.Gestor = gestor;
