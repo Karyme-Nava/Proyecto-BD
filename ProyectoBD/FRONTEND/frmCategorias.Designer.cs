@@ -48,6 +48,7 @@ namespace ProyectoBD.FRONTEND
             this.btnAgregar.TabIndex = 14;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnModificar
             // 
@@ -58,6 +59,7 @@ namespace ProyectoBD.FRONTEND
             this.btnModificar.TabIndex = 15;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
@@ -115,6 +117,7 @@ namespace ProyectoBD.FRONTEND
             this.Controls.Add(this.btnAgregar);
             this.Name = "frmCategorias";
             this.Text = "Categorías";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCategorias_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dgCategorias)).EndInit();
             this.ResumeLayout(false);
 

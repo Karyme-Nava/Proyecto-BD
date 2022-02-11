@@ -30,9 +30,6 @@ namespace ProyectoBD.FRONTEND
         private void InitializeComponent()
         {
             this.dgProblemas = new System.Windows.Forms.DataGridView();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnModificar = new System.Windows.Forms.Button();
-            this.btnAgregar = new System.Windows.Forms.Button();
             this.IdProblema = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +42,9 @@ namespace ProyectoBD.FRONTEND
             this.Visibilidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaCreacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fuente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgProblemas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,36 +73,6 @@ namespace ProyectoBD.FRONTEND
             this.dgProblemas.ReadOnly = true;
             this.dgProblemas.Size = new System.Drawing.Size(905, 295);
             this.dgProblemas.TabIndex = 25;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
-            this.btnEliminar.Location = new System.Drawing.Point(713, 368);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(144, 35);
-            this.btnEliminar.TabIndex = 24;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            // 
-            // btnModificar
-            // 
-            this.btnModificar.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
-            this.btnModificar.Location = new System.Drawing.Point(383, 368);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(144, 35);
-            this.btnModificar.TabIndex = 23;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = true;
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
-            this.btnAgregar.Location = new System.Drawing.Point(71, 368);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(144, 35);
-            this.btnAgregar.TabIndex = 22;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
             // 
             // IdProblema
             // 
@@ -176,6 +146,38 @@ namespace ProyectoBD.FRONTEND
             this.Fuente.Name = "Fuente";
             this.Fuente.ReadOnly = true;
             // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
+            this.btnEliminar.Location = new System.Drawing.Point(713, 368);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(144, 35);
+            this.btnEliminar.TabIndex = 24;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
+            this.btnModificar.Location = new System.Drawing.Point(383, 368);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(144, 35);
+            this.btnModificar.TabIndex = 23;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
+            this.btnAgregar.Location = new System.Drawing.Point(71, 368);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(144, 35);
+            this.btnAgregar.TabIndex = 22;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
             // frmProblemas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -187,6 +189,7 @@ namespace ProyectoBD.FRONTEND
             this.Controls.Add(this.btnAgregar);
             this.Name = "frmProblemas";
             this.Text = "Problemas";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmProblemas_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dgProblemas)).EndInit();
             this.ResumeLayout(false);
 

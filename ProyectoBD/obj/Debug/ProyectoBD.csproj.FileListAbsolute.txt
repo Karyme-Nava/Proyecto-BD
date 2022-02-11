@@ -7,3 +7,18 @@ C:\Users\Karyme Nava\source\repos\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csp
 C:\Users\Karyme Nava\source\repos\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csproj.CoreCompileInputs.cache
 C:\Users\Karyme Nava\source\repos\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.exe
 C:\Users\Karyme Nava\source\repos\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.pdb
+C:\Users\Aurora\Desktop\New folder (2)\BD\ProyectoU2\ProyectoBD\ProyectoBD\bin\Debug\ProyectoBD.exe.config
+C:\Users\Aurora\Desktop\New folder (2)\BD\ProyectoU2\ProyectoBD\ProyectoBD\bin\Debug\ProyectoBD.exe
+C:\Users\Aurora\Desktop\New folder (2)\BD\ProyectoU2\ProyectoBD\ProyectoBD\bin\Debug\ProyectoBD.pdb
+C:\Users\Aurora\Desktop\New folder (2)\BD\ProyectoU2\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csproj.AssemblyReference.cache
+C:\Users\Aurora\Desktop\New folder (2)\BD\ProyectoU2\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aurora\Desktop\New folder (2)\BD\ProyectoU2\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.FRONTEND.frmAgregarCategoria.resources
+C:\Users\Aurora\Desktop\New folder (2)\BD\ProyectoU2\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.FRONTEND.frmAgregarProblema.resources
+C:\Users\Aurora\Desktop\New folder (2)\BD\ProyectoU2\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.FRONTEND.frmCategorias.resources
+C:\Users\Aurora\Desktop\New folder (2)\BD\ProyectoU2\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.Problemas.resources
+C:\Users\Aurora\Desktop\New folder (2)\BD\ProyectoU2\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.FRONTEND.frmProblemas.resources
+C:\Users\Aurora\Desktop\New folder (2)\BD\ProyectoU2\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.Properties.Resources.resources
+C:\Users\Aurora\Desktop\New folder (2)\BD\ProyectoU2\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csproj.GenerateResource.cache
+C:\Users\Aurora\Desktop\New folder (2)\BD\ProyectoU2\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csproj.CoreCompileInputs.cache
+C:\Users\Aurora\Desktop\New folder (2)\BD\ProyectoU2\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.exe
+C:\Users\Aurora\Desktop\New folder (2)\BD\ProyectoU2\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.pdb

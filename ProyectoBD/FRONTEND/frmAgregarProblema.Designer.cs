@@ -65,6 +65,7 @@ namespace ProyectoBD.FRONTEND
             this.btnGuardar.TabIndex = 13;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // txtDescripcion
             // 
@@ -154,6 +155,8 @@ namespace ProyectoBD.FRONTEND
             // 
             this.cbCategoria.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
             this.cbCategoria.FormattingEnabled = true;
+            this.cbCategoria.Items.AddRange(new object[] {
+            "Muy buena"});
             this.cbCategoria.Location = new System.Drawing.Point(152, 354);
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(230, 29);
@@ -315,6 +318,7 @@ namespace ProyectoBD.FRONTEND
             this.Controls.Add(this.label1);
             this.Name = "frmAgregarProblema";
             this.Text = "Agregar problema";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAgregarProblema_FormClosing);
             this.gbVisibilidad.ResumeLayout(false);
             this.gbVisibilidad.PerformLayout();
             this.ResumeLayout(false);

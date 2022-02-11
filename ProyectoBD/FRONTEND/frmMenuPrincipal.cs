@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProyectoBD.FRONTEND;
 
 namespace ProyectoBD
 {
@@ -15,6 +16,20 @@ namespace ProyectoBD
         public Problemas()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmProblemas form = new frmProblemas(this);
+            form.Show();
+            this.Visible = false;
+        }
+
+        private void btnCategorias_Click(object sender, EventArgs e)
+        {
+            frmCategorias form = new frmCategorias(this);
+            form.Show();
+            this.Visible = false;
         }
     }
 }
