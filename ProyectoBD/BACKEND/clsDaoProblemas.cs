@@ -123,8 +123,8 @@ namespace ProyectoBD.BACKEND
         public List<clsProblemas> ListaProblemas()
         {
             MySqlConnection conexion = new MySqlConnection();
-            conexion.ConnectionString = ""; //Actualizar
-            conexion.Open();
+            conexion.ConnectionString = "server=8.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=10875"; //Actualizar
+            conexion.Open(); //TODO: Puede arrojar EXCEPTION
 
             string cadena = "select * from Problemas";
             

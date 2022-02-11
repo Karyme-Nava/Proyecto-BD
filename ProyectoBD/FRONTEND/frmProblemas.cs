@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProyectoBD.FRONTEND;
+using ProyectoBD.BACKEND;
+using ProyectoBD.POJOS;
 
 namespace ProyectoBD.FRONTEND
 {
@@ -18,8 +20,10 @@ namespace ProyectoBD.FRONTEND
         {
             InitializeComponent();
             this.parent = parent;
-            // Inicializar tabla
-
+            // TODO: Inicializar tabla
+            /*clsDaoProblemas daoProblemas = new clsDaoProblemas();
+            List<clsProblemas> problemas = daoProblemas.ListaProblemas();
+            dgProblemas.DataSource = problemas;*/
         }
         public frmProblemas()
         {
