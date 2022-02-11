@@ -47,6 +47,7 @@ namespace ProyectoBD.FRONTEND
             this.btnGuardar.TabIndex = 13;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // txtDescripcion
             // 
@@ -117,6 +118,7 @@ namespace ProyectoBD.FRONTEND
             this.Controls.Add(this.label1);
             this.Name = "frmAgregarCategoria";
             this.Text = "Agregar Categoría";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAgregarCategoria_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
