@@ -29,47 +29,82 @@ namespace ProyectoBD
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnProblemas = new System.Windows.Forms.Button();
-            this.btnCategorias = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Problemas));
+            this.pbxProblemas = new System.Windows.Forms.PictureBox();
+            this.pbxCategorias = new System.Windows.Forms.PictureBox();
+            this.lblCategorias = new System.Windows.Forms.Label();
+            this.lblProblemas = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxProblemas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCategorias)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnProblemas
+            // pbxProblemas
             // 
-            this.btnProblemas.Location = new System.Drawing.Point(287, 65);
-            this.btnProblemas.Name = "btnProblemas";
-            this.btnProblemas.Size = new System.Drawing.Size(75, 23);
-            this.btnProblemas.TabIndex = 0;
-            this.btnProblemas.Text = "Problemas";
-            this.btnProblemas.UseVisualStyleBackColor = true;
-            this.btnProblemas.Click += new System.EventHandler(this.button1_Click);
+            this.pbxProblemas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbxProblemas.BackgroundImage")));
+            this.pbxProblemas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxProblemas.Location = new System.Drawing.Point(390, 35);
+            this.pbxProblemas.Name = "pbxProblemas";
+            this.pbxProblemas.Size = new System.Drawing.Size(300, 300);
+            this.pbxProblemas.TabIndex = 2;
+            this.pbxProblemas.TabStop = false;
+            this.pbxProblemas.Click += new System.EventHandler(this.pbxProblemas_Click);
             // 
-            // btnCategorias
+            // pbxCategorias
             // 
-            this.btnCategorias.Location = new System.Drawing.Point(440, 65);
-            this.btnCategorias.Name = "btnCategorias";
-            this.btnCategorias.Size = new System.Drawing.Size(75, 23);
-            this.btnCategorias.TabIndex = 1;
-            this.btnCategorias.Text = "Categorías";
-            this.btnCategorias.UseVisualStyleBackColor = true;
-            this.btnCategorias.Click += new System.EventHandler(this.btnCategorias_Click);
+            this.pbxCategorias.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbxCategorias.BackgroundImage")));
+            this.pbxCategorias.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxCategorias.Location = new System.Drawing.Point(42, 35);
+            this.pbxCategorias.Name = "pbxCategorias";
+            this.pbxCategorias.Size = new System.Drawing.Size(300, 300);
+            this.pbxCategorias.TabIndex = 3;
+            this.pbxCategorias.TabStop = false;
+            this.pbxCategorias.Click += new System.EventHandler(this.pbxCategorias_Click);
+            // 
+            // lblCategorias
+            // 
+            this.lblCategorias.AutoSize = true;
+            this.lblCategorias.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
+            this.lblCategorias.Location = new System.Drawing.Point(147, 344);
+            this.lblCategorias.Name = "lblCategorias";
+            this.lblCategorias.Size = new System.Drawing.Size(91, 21);
+            this.lblCategorias.TabIndex = 4;
+            this.lblCategorias.Text = "Categorías";
+            // 
+            // lblProblemas
+            // 
+            this.lblProblemas.AutoSize = true;
+            this.lblProblemas.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
+            this.lblProblemas.Location = new System.Drawing.Point(495, 344);
+            this.lblProblemas.Name = "lblProblemas";
+            this.lblProblemas.Size = new System.Drawing.Size(90, 21);
+            this.lblProblemas.TabIndex = 5;
+            this.lblProblemas.Text = "Problemas";
             // 
             // Problemas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(928, 450);
-            this.Controls.Add(this.btnCategorias);
-            this.Controls.Add(this.btnProblemas);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(739, 391);
+            this.Controls.Add(this.lblProblemas);
+            this.Controls.Add(this.lblCategorias);
+            this.Controls.Add(this.pbxCategorias);
+            this.Controls.Add(this.pbxProblemas);
             this.Name = "Problemas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
+            ((System.ComponentModel.ISupportInitialize)(this.pbxProblemas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCategorias)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnProblemas;
-        private System.Windows.Forms.Button btnCategorias;
+        private System.Windows.Forms.PictureBox pbxProblemas;
+        private System.Windows.Forms.PictureBox pbxCategorias;
+        private System.Windows.Forms.Label lblCategorias;
+        private System.Windows.Forms.Label lblProblemas;
     }
 }
 

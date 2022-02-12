@@ -34,8 +34,6 @@ namespace ProyectoBD.FRONTEND
             this.label3 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnGuardar
@@ -52,17 +50,17 @@ namespace ProyectoBD.FRONTEND
             // txtDescripcion
             // 
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(142, 130);
+            this.txtDescripcion.Location = new System.Drawing.Point(142, 73);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(230, 86);
+            this.txtDescripcion.Size = new System.Drawing.Size(230, 143);
             this.txtDescripcion.TabIndex = 12;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(34, 133);
+            this.label3.Location = new System.Drawing.Point(34, 73);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(102, 21);
             this.label3.TabIndex = 11;
@@ -71,7 +69,7 @@ namespace ProyectoBD.FRONTEND
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(142, 75);
+            this.txtNombre.Location = new System.Drawing.Point(142, 26);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(230, 28);
             this.txtNombre.TabIndex = 10;
@@ -80,29 +78,11 @@ namespace ProyectoBD.FRONTEND
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(59, 78);
+            this.label2.Location = new System.Drawing.Point(59, 29);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 21);
             this.label2.TabIndex = 9;
             this.label2.Text = "Nombre:";
-            // 
-            // txtId
-            // 
-            this.txtId.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(224, 20);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(88, 28);
-            this.txtId.TabIndex = 8;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(110, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 21);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Id Categoría:";
             // 
             // frmAgregarCategoria
             // 
@@ -114,9 +94,8 @@ namespace ProyectoBD.FRONTEND
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtId);
-            this.Controls.Add(this.label1);
             this.Name = "frmAgregarCategoria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Categoría";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAgregarCategoria_FormClosing);
             this.ResumeLayout(false);
@@ -131,7 +110,5 @@ namespace ProyectoBD.FRONTEND
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.Label label1;
     }
 }

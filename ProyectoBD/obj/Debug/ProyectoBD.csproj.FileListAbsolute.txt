@@ -81,3 +81,40 @@ D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\
 D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.csproj.CoreCompileInputs.cache
 D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.exe
 D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.pdb
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\ProyectoBD.exe.config
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\ProyectoBD.exe
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\ProyectoBD.pdb
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\Google.Protobuf.dll
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\MySql.Data.dll
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\System.Buffers.dll
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\System.Memory.dll
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\ZstdNet.dll
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\Google.Protobuf.pdb
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\Google.Protobuf.xml
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\MySql.Data.xml
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\System.Buffers.xml
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\System.Memory.xml
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.csprojAssemblyReference.cache
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.FRONTEND.frmAgregarCategoria.resources
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.FRONTEND.frmAgregarProblema.resources
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.FRONTEND.frmCategorias.resources
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.Problemas.resources
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.FRONTEND.frmProblemas.resources
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.Properties.Resources.resources
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.csproj.GenerateResource.cache
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.csproj.CoreCompileInputs.cache
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.csproj.CopyComplete
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.exe
+C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.pdb
