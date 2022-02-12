@@ -45,3 +45,39 @@ C:\Users\Aurora\Desktop\New folder (2)\BD\ProyectoU2\ProyectoBD\ProyectoBD\bin\D
 C:\Users\Aurora\Desktop\New folder (2)\BD\ProyectoU2\ProyectoBD\ProyectoBD\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Aurora\Desktop\New folder (2)\BD\ProyectoU2\ProyectoBD\ProyectoBD\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Aurora\Desktop\New folder (2)\BD\ProyectoU2\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csproj.CopyComplete
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\ProyectoBD.exe.config
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\ProyectoBD.exe
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\ProyectoBD.pdb
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\BouncyCastle.Crypto.dll
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\Google.Protobuf.dll
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\K4os.Compression.LZ4.dll
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\K4os.Hash.xxHash.dll
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\MySql.Data.dll
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\System.Buffers.dll
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\System.Memory.dll
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\System.Numerics.Vectors.dll
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\Ubiety.Dns.Core.dll
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\ZstdNet.dll
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\Google.Protobuf.pdb
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\Google.Protobuf.xml
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\K4os.Compression.LZ4.xml
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\K4os.Hash.xxHash.xml
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\MySql.Data.xml
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\System.Buffers.xml
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\System.Memory.xml
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\System.Numerics.Vectors.xml
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.csproj.AssemblyReference.cache
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.FRONTEND.frmAgregarCategoria.resources
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.FRONTEND.frmAgregarProblema.resources
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.FRONTEND.frmCategorias.resources
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.Problemas.resources
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.FRONTEND.frmProblemas.resources
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.Properties.Resources.resources
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.csproj.GenerateResource.cache
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.csproj.CoreCompileInputs.cache
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.exe
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.pdb

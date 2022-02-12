@@ -158,8 +158,6 @@ namespace ProyectoBD.FRONTEND
             this.cbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCategoria.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
             this.cbCategoria.FormattingEnabled = true;
-            this.cbCategoria.Items.AddRange(new object[] {
-            "Muy buena"});
             this.cbCategoria.Location = new System.Drawing.Point(152, 354);
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(230, 29);
@@ -188,11 +186,6 @@ namespace ProyectoBD.FRONTEND
             this.cbDificultad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDificultad.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
             this.cbDificultad.FormattingEnabled = true;
-            this.cbDificultad.Items.AddRange(new object[] {
-            "Basico",
-            "Medio",
-            "Dificil",
-            "Muy dificil"});
             this.cbDificultad.Location = new System.Drawing.Point(152, 406);
             this.cbDificultad.Name = "cbDificultad";
             this.cbDificultad.Size = new System.Drawing.Size(230, 29);
@@ -213,10 +206,6 @@ namespace ProyectoBD.FRONTEND
             this.cbGestor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGestor.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
             this.cbGestor.FormattingEnabled = true;
-            this.cbGestor.Items.AddRange(new object[] {
-            "MySQL",
-            "SQL Server",
-            "PostgreSQL"});
             this.cbGestor.Location = new System.Drawing.Point(565, 406);
             this.cbGestor.Name = "cbGestor";
             this.cbGestor.Size = new System.Drawing.Size(230, 29);

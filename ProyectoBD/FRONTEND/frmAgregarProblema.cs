@@ -32,7 +32,17 @@ namespace ProyectoBD.FRONTEND
             }
             cbCategoria.DataSource = listaCat;
             cbCategoria.ValueMember = "Item1";
-            cbCategoria.DisplayMember = "Item2";            
+            cbCategoria.DisplayMember = "Item2";
+            
+            cbDificultad.DataSource = new clsDaoProblemas().obtenerNivelDif();
+            cbDificultad.DisplayMember = "NivelDificultad";
+            cbDificultad.ValueMember = "NivelDificultad";
+
+            cbGestor.DataSource = new clsDaoProblemas().obtenerGestor();
+            cbGestor.DisplayMember = "Gestor";
+            cbGestor.ValueMember = "Gestor";
+
+
         }
 
         public frmAgregarProblema()
@@ -52,12 +62,12 @@ namespace ProyectoBD.FRONTEND
             if (type == 0) // Dato nuevo, INSERT
             {
                 // TODO: Descomentar
-                //daoProblemas.InsertarProblema(problema);
+                daoProblemas.InsertarProblema(problema);
             }
             else if (type == 1) // Dato a actualizar, UPDATE
             {
-                // TODO: Descomentar
-                //daoProblemas.ActualizarProblema(problema);
+                //TODO: Descomentar
+                daoProblemas.ActualizarProblema(problema);
             }
         }
         
@@ -118,7 +128,7 @@ namespace ProyectoBD.FRONTEND
             string dificultad = "";
             try
             {
-                dificultad = cbDificultad.SelectedItem.ToString();
+                dificultad = cbDificultad.SelectedValue.ToString();
             }
             catch (Exception ex)
             {
@@ -129,7 +139,7 @@ namespace ProyectoBD.FRONTEND
             string gestor = "";
             try
             {
-                gestor = cbGestor.SelectedItem.ToString();
+                gestor = cbGestor.SelectedValue.ToString();
             }
             catch (Exception ex)
             {

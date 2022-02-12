@@ -91,6 +91,11 @@
   <ItemGroup>
     <Compile Include="BACKEND\clsDaoCategorias.cs" />
     <Compile Include="BACKEND\clsDaoProblemas.cs" />
+    <Compile Include="BACKEND\Conexion.cs" />
+    <Compile Include="BACKEND\ConexionException.cs" />
+    <Compile Include="BACKEND\DuplicationException.cs" />
+    <Compile Include="BACKEND\NoControllerException.cs" />
+    <Compile Include="BACKEND\ParentException.cs" />
     <Compile Include="FRONTEND\frmCategorias.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -21,9 +21,9 @@ namespace ProyectoBD.FRONTEND
             InitializeComponent();
             this.parent = parent;
             // TODO: Inicializar tabla
-            /*clsDaoProblemas daoProblemas = new clsDaoProblemas();
+            clsDaoProblemas daoProblemas = new clsDaoProblemas();
             List<clsProblemas> problemas = daoProblemas.ListaProblemas();
-            dgProblemas.DataSource = problemas;*/
+            dgProblemas.DataSource = problemas;
         }
         public frmProblemas()
         {

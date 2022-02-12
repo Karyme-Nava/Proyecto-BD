@@ -16,7 +16,7 @@ namespace ProyectoBD.BACKEND
         public bool EliminarProblema(clsProblemas p)
         {
             MySqlConnection conexion = new MySqlConnection();
-            conexion.ConnectionString = ""; //Actualizar
+            conexion.ConnectionString = "server=4.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=15538"; //Actualizar
             conexion.Open();
 
             string cadena = "delete from Problemas where IDProblema = @id";
@@ -42,7 +42,7 @@ namespace ProyectoBD.BACKEND
         public bool InsertarProblema(clsProblemas p)
         {
             MySqlConnection conexion = new MySqlConnection();
-            conexion.ConnectionString = ""; //Actualizar
+            conexion.ConnectionString = "server=4.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=15538"; //Actualizar
             conexion.Open();
 
             string cadena = "insert into Problemas (Nombre, Descripcion, Solucion, IDCategoria, Puntaje, "
@@ -81,7 +81,7 @@ namespace ProyectoBD.BACKEND
         public bool ActualizarProblema(clsProblemas p)
         {
             MySqlConnection conexion = new MySqlConnection();
-            conexion.ConnectionString = ""; //Actualizar
+            conexion.ConnectionString = "server=4.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=15538"; //Actualizar
             conexion.Open();
             // TODO: Corregir ISSUE #3
             string cadena = "update Problemas "
@@ -120,10 +120,31 @@ namespace ProyectoBD.BACKEND
             return true;
         }
 
+
+        public DataTable obtenerNivelDif()
+        {
+            
+
+            MySqlCommand consulta =
+                new MySqlCommand(@"SELECT NivelDificultad
+                    FROM Problemas");
+            return Conexion.ejecutarConsulta(consulta);
+        }
+
+        public DataTable obtenerGestor()
+        {
+
+
+            MySqlCommand consulta =
+                new MySqlCommand(@"SELECT Gestor
+                    FROM Problemas");
+            return Conexion.ejecutarConsulta(consulta);
+        }
+
         public List<clsProblemas> ListaProblemas()
         {
             MySqlConnection conexion = new MySqlConnection();
-            conexion.ConnectionString = "server=8.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=10875"; //Actualizar
+            conexion.ConnectionString = "server=4.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=15538"; //Actualizar
             conexion.Open(); //TODO: Puede arrojar EXCEPTION
 
             string cadena = "select * from Problemas";
