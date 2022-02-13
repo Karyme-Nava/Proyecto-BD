@@ -14,137 +14,88 @@ namespace ProyectoBD.BACKEND
     class clsDaoCategorias
     {
         public bool EliminarCategoria(clsCategorias c)
-        {
-            MySqlConnection conexion = new MySqlConnection();
-            conexion.ConnectionString = "server=0.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=12938"; //Actualizar
-            conexion.Open();
+        {   
+            MySqlCommand delete = new MySqlCommand(
+                @"delete from Categorias where IDCategoria = @id");
 
-            string cadena = "delete from Categorias where IDCategoria = @id";
-            MySqlCommand comando = new MySqlCommand(cadena, conexion);
-            comando.Parameters.AddWithValue("@id", c.IDCategoria);
+            delete.Parameters.AddWithValue("@id", c.IDCategoria);
 
-            try
-            {
-                comando.ExecuteNonQuery();
-            }
-            catch (MySqlException ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                conexion.Close();
-                conexion.Dispose();
-            }
-            return true;
+            int resultado = Conexion.ejecutarSentencia(delete);
+
+            return (resultado > 0);
         }
 
         public bool InsertarCategoria(clsCategorias c)
         {
-            MySqlConnection conexion = new MySqlConnection();
-            conexion.ConnectionString = "server=0.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=12938"; //Actualizar
-            conexion.Open();
+            MySqlCommand insert = new MySqlCommand(
+                @"insert into Categorias (NombreCategoria, Descripcion) " +
+                "values (@nombre, @descripcion)");
+            insert.Parameters.AddWithValue("@nombre", c.NombreCategoria);
+            insert.Parameters.AddWithValue("@descripcion", c.Descripcion);
 
-            string cadena = "insert into Categorias (NombreCategoria, Descripcion) " +
-                "values (@nombre, @descripcion)";
-            MySqlCommand comando = new MySqlCommand(cadena, conexion);
-            comando.Parameters.AddWithValue("@nombre", c.NombreCategoria);
-            comando.Parameters.AddWithValue("@descripcion", c.Descripcion);
+            int resultado = Conexion.ejecutarSentencia(insert);
 
-            try
-            {
-                comando.ExecuteNonQuery();
-            }
-            catch (MySqlException ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                conexion.Close();
-                conexion.Dispose();
-            }
-            return true;
+            return (resultado > 0);
         }
 
         public bool ActualizarCategoria(clsCategorias c)
         {
-            MySqlConnection conexion = new MySqlConnection();
-            conexion.ConnectionString = "server=0.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=12938"; //Actualizar
-            conexion.Open();
-
-            string cadena = "update Categorias "
+            MySqlCommand update = new MySqlCommand(@"update Categorias "
                 + "set NombreCategoria = @nombre, Descripcion = @descripcion "
-                + "where IDCategoria = @id";
-            MySqlCommand comando = new MySqlCommand(cadena, conexion);
-            comando.Parameters.AddWithValue("@id", c.IDCategoria);
-            comando.Parameters.AddWithValue("@nombre", c.NombreCategoria);
-            comando.Parameters.AddWithValue("@descripcion", c.Descripcion);
+                + "where IDCategoria = @id");
+            update.Parameters.AddWithValue("@id", c.IDCategoria);
+            update.Parameters.AddWithValue("@nombre", c.NombreCategoria);
+            update.Parameters.AddWithValue("@descripcion", c.Descripcion);
 
-            try
-            {
-                comando.ExecuteNonQuery();
-            }
-            catch (MySqlException ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                conexion.Close();
-                conexion.Dispose();
-            }
-            return true;
-        }
+            int resultado = Conexion.ejecutarSentencia(update);
 
-        public clsCategorias Categoria(int idCategoria)
-        {
-            MySqlConnection conexion = new MySqlConnection();
-            conexion.ConnectionString = "server=0.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=12938"; //Actualizar
-            conexion.Open();
-
-            string cadena = "select * from Categorias where IDCategoria = @id";
-            MySqlCommand comando = new MySqlCommand(cadena, conexion);
-            comando.Parameters.AddWithValue("@id", idCategoria);
-
-            MySqlDataAdapter da = new MySqlDataAdapter(comando);
-            DataSet ds = new DataSet();
-            da.Fill(ds, "categoria");
-
-            clsCategorias categoria = new clsCategorias();
-            foreach (DataRow dr in ds.Tables["categoria"].Rows)
-            {
-                categoria.IDCategoria = Convert.ToInt32(dr[0]);
-                categoria.NombreCategoria = dr[1].ToString();
-                categoria.Descripcion = dr[2].ToString();
-            }
-
-            return categoria;
+            return (resultado > 0);
         }
 
         public List<clsCategorias> ListaCategorias()
         {
-            MySqlConnection conexion = new MySqlConnection();
-            conexion.ConnectionString = "server=0.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=12938"; //Actualizar
-            conexion.Open();
+            MySqlCommand consulta =
+                new MySqlCommand(@"select * from Categorias");
 
-            string cadena = "select * from Categorias";
-            
-            MySqlDataAdapter da = new MySqlDataAdapter(cadena, conexion);
-            DataSet ds = new DataSet();
-            da.Fill(ds, "categorias");
-
+            DataTable resultado = Conexion.ejecutarConsulta(consulta);
             List<clsCategorias> lstCategorias = new List<clsCategorias>();
-            foreach (DataRow dr in ds.Tables["categorias"].Rows)
+
+            if (resultado != null)
             {
-                clsCategorias categoria = new clsCategorias();
-                categoria.IDCategoria = Convert.ToInt32(dr[0]);
-                categoria.NombreCategoria = dr[1].ToString();
-                categoria.Descripcion = dr[2].ToString();
-                lstCategorias.Add(categoria);
+                foreach (DataRow fila in resultado.Rows)
+                {
+                    clsCategorias categoria = new clsCategorias();
+                    categoria.IDCategoria = Convert.ToInt32(fila[0]);
+                    categoria.NombreCategoria = fila[1].ToString();
+                    categoria.Descripcion = fila[2].ToString();
+                    lstCategorias.Add(categoria);
+                }
             }
 
             return lstCategorias;
+        }
+
+        public clsCategorias obtenerCategoria(int idCategoria)
+        {
+            MySqlCommand consulta =
+                new MySqlCommand(@"select * from Categorias where IDCategoria = @id");
+
+            consulta.Parameters.AddWithValue("@id", idCategoria);
+
+            DataTable resultado = Conexion.ejecutarConsulta(consulta);
+
+            if (resultado != null && resultado.Rows.Count > 0)
+            {
+                DataRow fila = resultado.Rows[0];
+                clsCategorias categoria = new clsCategorias();
+                categoria.IDCategoria = Convert.ToInt32(fila[0]);
+                categoria.NombreCategoria = fila[1].ToString();
+                categoria.Descripcion = fila[2].ToString();
+
+                return categoria;
+            }
+            else
+                return null;
         }
     }
 }

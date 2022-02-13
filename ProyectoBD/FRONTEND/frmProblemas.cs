@@ -37,7 +37,6 @@ namespace ProyectoBD.FRONTEND
                 clsDaoProblemas daoProblemas = new clsDaoProblemas();
                 List<clsProblemas> problemas = daoProblemas.ListaProblemas();
                 dgProblemas.DataSource = problemas;
-
             }
             catch (NoControllerException ex)
             {
@@ -79,7 +78,7 @@ namespace ProyectoBD.FRONTEND
             }
             else
             {
-                MessageBox.Show("Selecciona al problema que deseas editar");
+                MessageBox.Show("Selecciona al problema que deseas editar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -99,11 +98,11 @@ namespace ProyectoBD.FRONTEND
                         clsDaoProblemas dao = new clsDaoProblemas();
                         if (dao.EliminarProblema(idProblema))
                         {
-                            MessageBox.Show("Problema eliminado");
+                            MessageBox.Show("Problema eliminado", "Operación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             cargarProblemas();
                         }
                         else
-                            MessageBox.Show("Error al eliminar");
+                            MessageBox.Show("Error al eliminar", "Operación fallida", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 catch (ParentException ex)
@@ -125,10 +124,7 @@ namespace ProyectoBD.FRONTEND
 
             }
             else
-                MessageBox.Show("Selecciona el problema que deseas eliminar");
-
-
-
+                MessageBox.Show("Selecciona el problema que deseas eliminar", "Operación fallida", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }

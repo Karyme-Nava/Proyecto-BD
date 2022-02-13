@@ -29,6 +29,8 @@ namespace ProyectoBD.FRONTEND
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgProblemas = new System.Windows.Forms.DataGridView();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
@@ -40,20 +42,37 @@ namespace ProyectoBD.FRONTEND
             // 
             this.dgProblemas.AllowUserToAddRows = false;
             this.dgProblemas.AllowUserToDeleteRows = false;
+            this.dgProblemas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgProblemas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgProblemas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgProblemas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgProblemas.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgProblemas.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgProblemas.Location = new System.Drawing.Point(12, 45);
             this.dgProblemas.MultiSelect = false;
             this.dgProblemas.Name = "dgProblemas";
             this.dgProblemas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgProblemas.Size = new System.Drawing.Size(905, 295);
+            this.dgProblemas.Size = new System.Drawing.Size(1023, 295);
             this.dgProblemas.TabIndex = 25;
             // 
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
-            this.btnEliminar.Location = new System.Drawing.Point(713, 368);
+            this.btnEliminar.Location = new System.Drawing.Point(771, 368);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(144, 35);
             this.btnEliminar.TabIndex = 24;
@@ -64,7 +83,7 @@ namespace ProyectoBD.FRONTEND
             // btnModificar
             // 
             this.btnModificar.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
-            this.btnModificar.Location = new System.Drawing.Point(383, 368);
+            this.btnModificar.Location = new System.Drawing.Point(441, 368);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(144, 35);
             this.btnModificar.TabIndex = 23;
@@ -75,7 +94,7 @@ namespace ProyectoBD.FRONTEND
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
-            this.btnAgregar.Location = new System.Drawing.Point(71, 368);
+            this.btnAgregar.Location = new System.Drawing.Point(129, 368);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(144, 35);
             this.btnAgregar.TabIndex = 22;
@@ -87,8 +106,8 @@ namespace ProyectoBD.FRONTEND
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(929, 450);
+            this.BackColor = System.Drawing.Color.LightBlue;
+            this.ClientSize = new System.Drawing.Size(1047, 450);
             this.Controls.Add(this.dgProblemas);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);

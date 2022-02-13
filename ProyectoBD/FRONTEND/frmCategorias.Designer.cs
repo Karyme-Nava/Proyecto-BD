@@ -77,7 +77,6 @@ namespace ProyectoBD.FRONTEND
             this.dgCategorias.AllowUserToDeleteRows = false;
             this.dgCategorias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgCategorias.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgCategorias.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
@@ -95,18 +94,18 @@ namespace ProyectoBD.FRONTEND
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgCategorias.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgCategorias.Location = new System.Drawing.Point(77, 55);
+            this.dgCategorias.Location = new System.Drawing.Point(12, 55);
             this.dgCategorias.Name = "dgCategorias";
             this.dgCategorias.ReadOnly = true;
             this.dgCategorias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgCategorias.Size = new System.Drawing.Size(786, 295);
+            this.dgCategorias.Size = new System.Drawing.Size(903, 295);
             this.dgCategorias.TabIndex = 17;
             // 
             // frmCategorias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Teal;
+            this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(927, 423);
             this.Controls.Add(this.dgCategorias);
             this.Controls.Add(this.btnEliminar);
@@ -116,7 +115,6 @@ namespace ProyectoBD.FRONTEND
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Categorías";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCategorias_FormClosing);
-            this.VisibleChanged += new System.EventHandler(this.frmCategorias_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.dgCategorias)).EndInit();
             this.ResumeLayout(false);
 

@@ -34,12 +34,14 @@ namespace ProyectoBD.FRONTEND
             this.label3 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.lblId = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
-            this.btnGuardar.Location = new System.Drawing.Point(142, 240);
+            this.btnGuardar.Location = new System.Drawing.Point(142, 275);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(144, 35);
             this.btnGuardar.TabIndex = 13;
@@ -50,7 +52,7 @@ namespace ProyectoBD.FRONTEND
             // txtDescripcion
             // 
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(142, 73);
+            this.txtDescripcion.Location = new System.Drawing.Point(142, 108);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(230, 143);
@@ -60,7 +62,7 @@ namespace ProyectoBD.FRONTEND
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(34, 73);
+            this.label3.Location = new System.Drawing.Point(34, 108);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(102, 21);
             this.label3.TabIndex = 11;
@@ -69,7 +71,7 @@ namespace ProyectoBD.FRONTEND
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(142, 26);
+            this.txtNombre.Location = new System.Drawing.Point(142, 61);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(230, 28);
             this.txtNombre.TabIndex = 10;
@@ -78,18 +80,39 @@ namespace ProyectoBD.FRONTEND
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(59, 29);
+            this.label2.Location = new System.Drawing.Point(59, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 21);
             this.label2.TabIndex = 9;
             this.label2.Text = "Nombre:";
             // 
+            // txtId
+            // 
+            this.txtId.Enabled = false;
+            this.txtId.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtId.Location = new System.Drawing.Point(142, 16);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(88, 28);
+            this.txtId.TabIndex = 15;
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblId.Location = new System.Drawing.Point(29, 19);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(108, 21);
+            this.lblId.TabIndex = 14;
+            this.lblId.Text = "Id Categoría:";
+            // 
             // frmAgregarCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(407, 299);
+            this.BackColor = System.Drawing.Color.LightBlue;
+            this.ClientSize = new System.Drawing.Size(407, 353);
+            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.lblId);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.label3);
@@ -111,5 +134,7 @@ namespace ProyectoBD.FRONTEND
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Label lblId;
     }
 }

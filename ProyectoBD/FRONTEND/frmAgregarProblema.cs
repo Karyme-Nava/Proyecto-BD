@@ -25,7 +25,8 @@ namespace ProyectoBD.FRONTEND
             if (idProblema.Length == 0)
             {
                 cargarCategorias();
-
+                lblId.Visible = false;
+                txtId.Visible = false;
             }
             else if (idProblema.Length > 0)
             {
@@ -90,22 +91,36 @@ namespace ProyectoBD.FRONTEND
         {
             clsDaoProblemas daoProblemas = new clsDaoProblemas();
             clsProblemas problema = getProblema();
-         
 
-            if (problema!=null && idProblema.Length==0) // Dato nuevo, INSERT
+            try
             {
-                daoProblemas.InsertarProblema(problema);
-                MessageBox.Show(this, "Problema almacenado exitosamente", "Operación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close();
-            }
-            else if(problema != null) // Dato a actualizar, UPDATE
-            {
-                problema.IDProblema = Convert.ToInt32(idProblema);
-                if (daoProblemas.ActualizarProblema(problema))
+                if (problema!=null && idProblema.Length==0) // Dato nuevo, INSERT
                 {
+                    daoProblemas.InsertarProblema(problema);
                     MessageBox.Show(this, "Problema almacenado exitosamente", "Operación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
                 }
+                else if(problema != null) // Dato a actualizar, UPDATE
+                {
+                    problema.IDProblema = Convert.ToInt32(idProblema);
+                    if (daoProblemas.ActualizarProblema(problema))
+                    {
+                        MessageBox.Show(this, "Problema almacenado exitosamente", "Operación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Close();
+                    }
+                }
+            }
+            catch (ConexionException ex)
+            {
+                MessageBox.Show(this, ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (NoControllerException ex)
+            {
+                MessageBox.Show(this, ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Ha ocurrido un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         
@@ -119,7 +134,7 @@ namespace ProyectoBD.FRONTEND
             string nombre = txtNombre.Text.Trim();
             if (nombre.Equals(""))
             {
-                MessageBox.Show("Debe escribir un nombre para el problema", "Datos incorrectos");
+                MessageBox.Show("Debes escribir un nombre para el problema", "Datos incorrectos");
                 return null;
             }
             if (nombre.Length>70)
@@ -131,24 +146,24 @@ namespace ProyectoBD.FRONTEND
             string descripcion = txtDescripcion.Text.Trim();
             if (descripcion.Equals(""))
             {
-                MessageBox.Show("Debe escribir una descripcion para el problema", "Datos incorrectos");
+                MessageBox.Show("Debes escribir una descripcion para el problema", "Datos incorrectos");
                 return null;
             }
             if (descripcion.Length > 65535)
             {
-                MessageBox.Show("Debe escribir una descripción para la categoría de menos de 65535 caracteres", "Datos incorrectos");
+                MessageBox.Show("Debes escribir una descripción para la categoría de menos de 65535 caracteres", "Datos incorrectos");
                 return null;
             }
 
             string solucion = txtSolucion.Text.Trim();
             if (solucion.Equals(""))
             {
-                MessageBox.Show("Debe escribir la solución del problema", "Datos incorrectos");
+                MessageBox.Show("Debes escribir la solución del problema", "Datos incorrectos");
                 return null;
             }
             if (solucion.Length > 65535)
             {
-                MessageBox.Show("Debe escribir una solución para la categoría de menos de 65535 caracteres", "Datos incorrectos");
+                MessageBox.Show("Debes escribir una solución para la categoría de menos de 65535 caracteres", "Datos incorrectos");
                 return null;
             }
 
@@ -158,7 +173,7 @@ namespace ProyectoBD.FRONTEND
                 categoria = Convert.ToInt32(cbCategoria.SelectedValue);
             }catch (Exception ex)
             {
-                MessageBox.Show("Debe seleccionar una categoría", "Datos incorrectos");
+                MessageBox.Show("Debes seleccionar una categoría", "Datos incorrectos");
                 return null;
             }
 
@@ -185,7 +200,7 @@ namespace ProyectoBD.FRONTEND
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Debe seleccionar un nivel de dificultad", "Datos incorrectos");
+                MessageBox.Show("Debes seleccionar un nivel de dificultad", "Datos incorrectos");
                 return null;
             }
 
@@ -196,14 +211,14 @@ namespace ProyectoBD.FRONTEND
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Debe seleccionar un gestor", "Datos incorrectos");
+                MessageBox.Show("Debes seleccionar un gestor", "Datos incorrectos");
                 return null;
             }
 
             string baseDeDatos = txtBD.Text.Trim();
             if (baseDeDatos.Equals(""))
             {
-                MessageBox.Show("Debe mencionar el nombre de la BD a usar", "Datos incorrectos");
+                MessageBox.Show("Debes mencionar el nombre de la BD a usar", "Datos incorrectos");
                 return null;
             }
             if (baseDeDatos.Length > 50)
@@ -219,7 +234,7 @@ namespace ProyectoBD.FRONTEND
                 visibilidad = rbPublico.Text;
             else if (visibilidad.Equals(""))
             {
-                MessageBox.Show("Debe escoger un tipo de visibilidad.");
+                MessageBox.Show("Debes escoger un tipo de visibilidad.");
                 return null;
             }
             
@@ -230,7 +245,7 @@ namespace ProyectoBD.FRONTEND
             string fuente = txtFuente.Text.Trim();
             if (fuente.Equals(""))
             {
-                MessageBox.Show("Debe escribir una fuente del problema", "Datos incorrectos");
+                MessageBox.Show("Debes escribir una fuente del problema", "Datos incorrectos");
                 return null;
             }
             if (fuente.Length > 50)

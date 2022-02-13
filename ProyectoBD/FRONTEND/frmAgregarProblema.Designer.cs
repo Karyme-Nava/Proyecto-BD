@@ -35,7 +35,7 @@ namespace ProyectoBD.FRONTEND
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
             this.txtSolucion = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -115,15 +115,15 @@ namespace ProyectoBD.FRONTEND
             this.txtId.Size = new System.Drawing.Size(88, 28);
             this.txtId.TabIndex = 8;
             // 
-            // label1
+            // lblId
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(38, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 21);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Id Problemas:";
+            this.lblId.AutoSize = true;
+            this.lblId.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblId.Location = new System.Drawing.Point(38, 22);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(107, 21);
+            this.lblId.TabIndex = 7;
+            this.lblId.Text = "Id Problema:";
             // 
             // txtSolucion
             // 
@@ -324,8 +324,8 @@ namespace ProyectoBD.FRONTEND
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(865, 578);
+            this.BackColor = System.Drawing.Color.LightBlue;
+            this.ClientSize = new System.Drawing.Size(865, 610);
             this.Controls.Add(this.txtBD);
             this.Controls.Add(this.txtFuente);
             this.Controls.Add(this.label11);
@@ -349,7 +349,7 @@ namespace ProyectoBD.FRONTEND
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtId);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblId);
             this.Name = "frmAgregarProblema";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar problema";
@@ -369,7 +369,7 @@ namespace ProyectoBD.FRONTEND
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.TextBox txtSolucion;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
