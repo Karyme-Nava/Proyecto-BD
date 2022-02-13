@@ -117,6 +117,7 @@ namespace ProyectoBD.FRONTEND
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label1);
             this.Name = "frmAgregarCategoria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Categoría";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAgregarCategoria_FormClosing);
             this.ResumeLayout(false);

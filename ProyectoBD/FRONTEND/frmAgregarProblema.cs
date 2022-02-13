@@ -16,12 +16,57 @@ namespace ProyectoBD.FRONTEND
     public partial class frmAgregarProblema : Form
     {
         Form parent = null;
-        int type = 0; // defines if should be an update or an insert
-        public frmAgregarProblema(Form parent, int type)
+        String idProblema =""; // defines if should be an update or an insert
+        public frmAgregarProblema(Form parent, String idProblema)
         {
             InitializeComponent();
             this.parent = parent;
-            this.type = type;
+            this.idProblema = idProblema;
+            if (idProblema.Length == 0)
+            {
+                cargarCategorias();
+
+            }
+            else if (idProblema.Length > 0)
+            {
+                this.Text = "Editar problema ID" + idProblema;
+                clsDaoProblemas daoProblem = new clsDaoProblemas();
+                cargarCategorias();
+                try
+                {
+                    clsProblemas problem = daoProblem.obtenerProblema(idProblema);
+                    txtId.Text = idProblema;
+                    txtNombre.Text = problem.Nombre;
+                    txtDescripcion.Text = problem.Descripcion;
+                    txtSolucion.Text = problem.Solucion;
+                    cbCategoria.SelectedValue = problem.IDCategoria;
+                    cbDificultad.SelectedItem = problem.NivelDificultad;
+                    txtBD.Text = problem.BaseDatos;
+                    txtPuntaje.Text = Convert.ToString(problem.Puntaje);
+                    cbGestor.SelectedItem = problem.Gestor;
+                    dtFecha.Value = problem.FechaCreacion;
+                    txtFuente.Text = problem.Fuente;
+                    if (problem.Visibilidad.Equals("Privado"))
+                        rbPrivada.Checked = true;
+                    else if (problem.Visibilidad.Equals("Publico"))
+                        rbPublico.Checked = true;
+                }
+                catch (NoControllerException ex)
+                {
+                    MessageBox.Show(this, ex.Message, "Operación fallida", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (ConexionException ex)
+                {
+                    MessageBox.Show(this, ex.Message, "Operación fallida", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(this, "Ha ocurrido un error al realizar la operación", "Operación fallida", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void cargarCategorias() {
             //Inicializar el combobox de categorias
             clsDaoCategorias daoCategorias = new clsDaoCategorias();
             List<clsCategorias> categorias = daoCategorias.ListaCategorias();
@@ -33,16 +78,6 @@ namespace ProyectoBD.FRONTEND
             cbCategoria.DataSource = listaCat;
             cbCategoria.ValueMember = "Item1";
             cbCategoria.DisplayMember = "Item2";
-            
-            cbDificultad.DataSource = new clsDaoProblemas().obtenerNivelDif();
-            cbDificultad.DisplayMember = "NivelDificultad";
-            cbDificultad.ValueMember = "NivelDificultad";
-
-            cbGestor.DataSource = new clsDaoProblemas().obtenerGestor();
-            cbGestor.DisplayMember = "Gestor";
-            cbGestor.ValueMember = "Gestor";
-
-
         }
 
         public frmAgregarProblema()
@@ -50,24 +85,29 @@ namespace ProyectoBD.FRONTEND
             InitializeComponent();
         }
 
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             clsDaoProblemas daoProblemas = new clsDaoProblemas();
             clsProblemas problema = getProblema();
-            if (type == 0) // Dato nuevo, INSERT
+         
+
+            if (idProblema.Length==0) // Dato nuevo, INSERT
             {
                 // TODO: Descomentar
                 daoProblemas.InsertarProblema(problema);
+                MessageBox.Show(this, "Problema almacenado exitosamente", "Operación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
             }
-            else if (type == 1) // Dato a actualizar, UPDATE
+            else // Dato a actualizar, UPDATE
             {
                 //TODO: Descomentar
-                daoProblemas.ActualizarProblema(problema);
+                problema.IDProblema = Convert.ToInt32(idProblema);
+                if (daoProblemas.ActualizarProblema(problema))
+                {
+                    MessageBox.Show(this, "Problema almacenado exitosamente", "Operación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
             }
         }
         
@@ -128,7 +168,7 @@ namespace ProyectoBD.FRONTEND
             string dificultad = "";
             try
             {
-                dificultad = cbDificultad.SelectedValue.ToString();
+                dificultad = cbDificultad.SelectedItem.ToString();
             }
             catch (Exception ex)
             {
@@ -139,7 +179,7 @@ namespace ProyectoBD.FRONTEND
             string gestor = "";
             try
             {
-                gestor = cbGestor.SelectedValue.ToString();
+                gestor = cbGestor.SelectedItem.ToString();
             }
             catch (Exception ex)
             {
@@ -155,12 +195,11 @@ namespace ProyectoBD.FRONTEND
             }
 
             string visibilidad = "";
-            for (int i = 0; i <gbVisibilidad.Controls.Count; i++)
-            {
-                if (((RadioButton)gbVisibilidad.Controls[i]).Checked)
-                    visibilidad = ((RadioButton)gbVisibilidad.Controls[i]).Text;
-            }
-            if (visibilidad.Equals(""))
+            if (rbPrivada.Checked)
+                visibilidad = rbPrivada.Text;
+            else if (rbPublico.Checked)
+                visibilidad = rbPublico.Text;
+            else if (visibilidad.Equals(""))
             {
                 MessageBox.Show("Debe escoger un tipo de visibilidad.");
                 return null;

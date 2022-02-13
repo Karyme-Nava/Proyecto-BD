@@ -41,11 +41,12 @@ namespace ProyectoBD.FRONTEND
             this.dgProblemas.AllowUserToAddRows = false;
             this.dgProblemas.AllowUserToDeleteRows = false;
             this.dgProblemas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgProblemas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgProblemas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgProblemas.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgProblemas.Location = new System.Drawing.Point(12, 45);
+            this.dgProblemas.MultiSelect = false;
             this.dgProblemas.Name = "dgProblemas";
-            this.dgProblemas.ReadOnly = true;
+            this.dgProblemas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgProblemas.Size = new System.Drawing.Size(905, 295);
             this.dgProblemas.TabIndex = 25;
             // 
@@ -58,6 +59,7 @@ namespace ProyectoBD.FRONTEND
             this.btnEliminar.TabIndex = 24;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
@@ -91,6 +93,7 @@ namespace ProyectoBD.FRONTEND
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnAgregar);
             this.Name = "frmProblemas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Problemas";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmProblemas_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dgProblemas)).EndInit();

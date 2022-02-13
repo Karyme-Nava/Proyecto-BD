@@ -61,6 +61,7 @@ namespace ProyectoBD
             this.Controls.Add(this.btnCategorias);
             this.Controls.Add(this.btnProblemas);
             this.Name = "Problemas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.ResumeLayout(false);
 
