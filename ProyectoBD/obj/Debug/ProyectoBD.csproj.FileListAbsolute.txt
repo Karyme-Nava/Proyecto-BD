@@ -121,3 +121,41 @@ C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\P
 C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.exe
 C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.pdb
 >>>>>>> cfae78b96b4fd6de4685d99aecd4e93109066dc0
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\ProyectoBD.exe.config
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\ProyectoBD.exe
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\ProyectoBD.pdb
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\Google.Protobuf.dll
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\MySql.Data.dll
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\System.Buffers.dll
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\System.Memory.dll
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\ZstdNet.dll
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\Google.Protobuf.pdb
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\Google.Protobuf.xml
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\MySql.Data.xml
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\System.Buffers.xml
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\System.Memory.xml
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.csproj.AssemblyReference.cache
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.FRONTEND.frmAgregarCategoria.resources
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.FRONTEND.frmAgregarProblema.resources
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.FRONTEND.frmCategorias.resources
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.Problemas.resources
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.FRONTEND.frmProblemas.resources
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.Properties.Resources.resources
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.csproj.GenerateResource.cache
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.csproj.CoreCompileInputs.cache
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.csproj.CopyComplete
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.exe
+C:\Users\Aurora\Desktop\New folder (2)\BD\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.pdb

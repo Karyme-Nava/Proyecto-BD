@@ -18,7 +18,7 @@ namespace ProyectoBD.BACKEND
         /// <returns>True si pudo establecer la conexión y False en caso contrario</returns>
         public static bool conectar()
         {
-            string parametrosConexion = "server=8.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=11863";
+            string parametrosConexion = "server=0.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=12938";
             
             try
             {

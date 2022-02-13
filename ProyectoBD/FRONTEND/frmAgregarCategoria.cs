@@ -41,12 +41,12 @@ namespace ProyectoBD.FRONTEND
             clsDaoCategorias daoCategorias = new clsDaoCategorias();
             try
             {
-                if (type == 0)
+                if (categoria!=null && type == 0)
                 {
                     daoCategorias.InsertarCategoria(categoria);
                     MessageBox.Show(this, "La categoría se agregó exitosamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                else
+                else if (categoria != null)
                 {
                     daoCategorias.ActualizarCategoria(categoria);
                     MessageBox.Show(this, "La categoría actualizó exitosamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);

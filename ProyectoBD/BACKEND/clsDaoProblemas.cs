@@ -50,7 +50,7 @@ namespace ProyectoBD.BACKEND
         public bool InsertarProblema(clsProblemas p)
         {
             MySqlConnection conexion = new MySqlConnection();
-            conexion.ConnectionString = "server=8.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=11863"; //Actualizar
+            conexion.ConnectionString = "server=0.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=12938"; //Actualizar
             conexion.Open();
 
             string cadena = @"insert into Problemas (Nombre, Descripcion, Solucion, IDCategoria, Puntaje, "
@@ -89,7 +89,6 @@ namespace ProyectoBD.BACKEND
         public bool ActualizarProblema(clsProblemas p)
         {
            
-            // TODO: Corregir ISSUE #3
             MySqlCommand update=new MySqlCommand(@"update Problemas 
                 set Nombre = @nombre, Descripcion = @descripcion, Solucion = @solucion, 
                 IDCategoria = @idCategoria, Puntaje = @puntaje, NivelDificultad = @nivelDificultad, 
@@ -133,7 +132,7 @@ namespace ProyectoBD.BACKEND
         public List<clsProblemas> ListaProblemas()
         {
             MySqlConnection conexion = new MySqlConnection();
-            conexion.ConnectionString = "server=8.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=11863"; //Actualizar
+            conexion.ConnectionString = "server=0.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=12938"; //Actualizar
             conexion.Open(); //TODO: Puede arrojar EXCEPTION
 
             string cadena = "select * from Problemas";

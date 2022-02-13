@@ -92,16 +92,14 @@ namespace ProyectoBD.FRONTEND
             clsProblemas problema = getProblema();
          
 
-            if (idProblema.Length==0) // Dato nuevo, INSERT
+            if (problema!=null && idProblema.Length==0) // Dato nuevo, INSERT
             {
-                // TODO: Descomentar
                 daoProblemas.InsertarProblema(problema);
                 MessageBox.Show(this, "Problema almacenado exitosamente", "Operación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }
-            else // Dato a actualizar, UPDATE
+            else if(problema != null) // Dato a actualizar, UPDATE
             {
-                //TODO: Descomentar
                 problema.IDProblema = Convert.ToInt32(idProblema);
                 if (daoProblemas.ActualizarProblema(problema))
                 {
@@ -124,6 +122,11 @@ namespace ProyectoBD.FRONTEND
                 MessageBox.Show("Debe escribir un nombre para el problema", "Datos incorrectos");
                 return null;
             }
+            if (nombre.Length>70)
+            {
+                MessageBox.Show("El nombre del problema debe contener a lo más 70 caracteres", "Datos incorrectos");
+                return null;
+            }
 
             string descripcion = txtDescripcion.Text.Trim();
             if (descripcion.Equals(""))
@@ -131,11 +134,21 @@ namespace ProyectoBD.FRONTEND
                 MessageBox.Show("Debe escribir una descripcion para el problema", "Datos incorrectos");
                 return null;
             }
+            if (descripcion.Length > 65535)
+            {
+                MessageBox.Show("Debe escribir una descripción para la categoría de menos de 65535 caracteres", "Datos incorrectos");
+                return null;
+            }
 
             string solucion = txtSolucion.Text.Trim();
             if (solucion.Equals(""))
             {
                 MessageBox.Show("Debe escribir la solución del problema", "Datos incorrectos");
+                return null;
+            }
+            if (solucion.Length > 65535)
+            {
+                MessageBox.Show("Debe escribir una solución para la categoría de menos de 65535 caracteres", "Datos incorrectos");
                 return null;
             }
 
@@ -193,6 +206,11 @@ namespace ProyectoBD.FRONTEND
                 MessageBox.Show("Debe mencionar el nombre de la BD a usar", "Datos incorrectos");
                 return null;
             }
+            if (baseDeDatos.Length > 50)
+            {
+                MessageBox.Show("El nombre de la base de datos debe contener a lo más 50 caracteres", "Datos incorrectos");
+                return null;
+            }
 
             string visibilidad = "";
             if (rbPrivada.Checked)
@@ -215,18 +233,23 @@ namespace ProyectoBD.FRONTEND
                 MessageBox.Show("Debe escribir una fuente del problema", "Datos incorrectos");
                 return null;
             }
+            if (fuente.Length > 50)
+            {
+                MessageBox.Show("El fuente del problema debe contener a lo más 50 caracteres", "Datos incorrectos");
+                return null;
+            }
 
             clsProblemas problema = new clsProblemas();
             problema.Nombre = nombre;
             problema.Descripcion = descripcion;
             problema.Solucion = solucion;
-            problema.IDCategoria = categoria; //TODO: Checar con mas casos
+            problema.IDCategoria = categoria; 
             problema.Puntaje = puntaje;
             problema.NivelDificultad = dificultad;
             problema.Gestor = gestor;
             problema.BaseDatos = baseDeDatos;
             problema.Visibilidad = visibilidad;
-            problema.FechaCreacion = date; // Esta la especifico desde aquí porque en el DAO la lee del objeto, aun que haya un default
+            problema.FechaCreacion = date; 
             problema.Fuente = fuente;
             return problema;
     }
