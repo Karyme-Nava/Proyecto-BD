@@ -18,14 +18,14 @@ namespace ProyectoBD
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void pbxProblemas_Click(object sender, EventArgs e)
         {
             frmProblemas form = new frmProblemas(this);
             form.Show();
             this.Visible = false;
         }
 
-        private void btnCategorias_Click(object sender, EventArgs e)
+        private void pbxCategorias_Click(object sender, EventArgs e)
         {
             frmCategorias form = new frmCategorias(this);
             form.Show();
