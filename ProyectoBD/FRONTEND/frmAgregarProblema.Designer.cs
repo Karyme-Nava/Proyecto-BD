@@ -108,6 +108,7 @@ namespace ProyectoBD.FRONTEND
             // 
             // txtId
             // 
+            this.txtId.Enabled = false;
             this.txtId.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(152, 19);
             this.txtId.Name = "txtId";
@@ -186,6 +187,11 @@ namespace ProyectoBD.FRONTEND
             this.cbDificultad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDificultad.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
             this.cbDificultad.FormattingEnabled = true;
+            this.cbDificultad.Items.AddRange(new object[] {
+            "Basico",
+            "Medio",
+            "Dificil",
+            "Muy dificil"});
             this.cbDificultad.Location = new System.Drawing.Point(152, 406);
             this.cbDificultad.Name = "cbDificultad";
             this.cbDificultad.Size = new System.Drawing.Size(230, 29);
@@ -206,6 +212,10 @@ namespace ProyectoBD.FRONTEND
             this.cbGestor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGestor.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
             this.cbGestor.FormattingEnabled = true;
+            this.cbGestor.Items.AddRange(new object[] {
+            "MySQL",
+            "SQL Server",
+            "PostgreSQL"});
             this.cbGestor.Location = new System.Drawing.Point(565, 406);
             this.cbGestor.Name = "cbGestor";
             this.cbGestor.Size = new System.Drawing.Size(230, 29);
@@ -238,10 +248,10 @@ namespace ProyectoBD.FRONTEND
             this.rbPrivada.AutoSize = true;
             this.rbPrivada.Location = new System.Drawing.Point(158, 19);
             this.rbPrivada.Name = "rbPrivada";
-            this.rbPrivada.Size = new System.Drawing.Size(84, 25);
+            this.rbPrivada.Size = new System.Drawing.Size(85, 25);
             this.rbPrivada.TabIndex = 27;
             this.rbPrivada.TabStop = true;
-            this.rbPrivada.Text = "Privada";
+            this.rbPrivada.Text = "Privado";
             this.rbPrivada.UseVisualStyleBackColor = true;
             // 
             // rbPublico
@@ -267,6 +277,7 @@ namespace ProyectoBD.FRONTEND
             // 
             // dtFecha
             // 
+            this.dtFecha.Enabled = false;
             this.dtFecha.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
             this.dtFecha.Location = new System.Drawing.Point(565, 460);
             this.dtFecha.Name = "dtFecha";
@@ -339,6 +350,7 @@ namespace ProyectoBD.FRONTEND
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label1);
             this.Name = "frmAgregarProblema";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar problema";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAgregarProblema_FormClosing);
             this.gbVisibilidad.ResumeLayout(false);

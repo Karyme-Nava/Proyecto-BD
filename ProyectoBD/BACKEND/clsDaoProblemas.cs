@@ -13,15 +13,23 @@ namespace ProyectoBD.BACKEND
 {
     class clsDaoProblemas
     {
-        public bool EliminarProblema(clsProblemas p)
+        public bool EliminarProblema(String p)
         {
-            MySqlConnection conexion = new MySqlConnection();
-            conexion.ConnectionString = "server=4.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=15538"; //Actualizar
+            MySqlCommand delete = new MySqlCommand(
+                @"delete from Problemas where IDProblema = @id"
+                );
+
+            delete.Parameters.AddWithValue("@id", p);
+            int resultado = Conexion.ejecutarSentencia(delete);
+            return (resultado > 0);
+
+            /*MySqlConnection conexion = new MySqlConnection();
+            conexion.ConnectionString = "server=8.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=11863"; //Actualizar
             conexion.Open();
 
             string cadena = "delete from Problemas where IDProblema = @id";
             MySqlCommand comando = new MySqlCommand(cadena, conexion);
-            comando.Parameters.AddWithValue("@id", p.IDProblema);
+            comando.Parameters.AddWithValue("@id", p);
 
             try
             {
@@ -36,31 +44,31 @@ namespace ProyectoBD.BACKEND
                 conexion.Close();
                 conexion.Dispose();
             }
-            return true;
+            return true;*/
         }
 
         public bool InsertarProblema(clsProblemas p)
         {
             MySqlConnection conexion = new MySqlConnection();
-            conexion.ConnectionString = "server=4.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=15538"; //Actualizar
+            conexion.ConnectionString = "server=8.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=11863"; //Actualizar
             conexion.Open();
 
-            string cadena = "insert into Problemas (Nombre, Descripcion, Solucion, IDCategoria, Puntaje, "
+            string cadena = @"insert into Problemas (Nombre, Descripcion, Solucion, IDCategoria, Puntaje, "
                 + "NivelDificultad, Gestor, BaseDatos, Visibilidad, FechaCreacion, Fuente) "
-                + "values('@nombre', '@descripcion', '@solucion', @idCategoria, @puntaje, '@nivelDificultad', "
-                + "'@gestor', '@baseDatos', '@visibilidad', '@fechaCreacion', '@fuente')";
+                + "values(@Nombre, @Descripcion, @Solucion, @IDCategoria, @Puntaje, @NivelDificultad, "
+                + "@Gestor, @BaseDatos, @Visibilidad, @FechaCreacion, @Fuente)";
             MySqlCommand comando = new MySqlCommand(cadena, conexion);
-            comando.Parameters.AddWithValue("@nombre", p.Nombre);
-            comando.Parameters.AddWithValue("@descripcion", p.Descripcion);
-            comando.Parameters.AddWithValue("@solucion", p.Solucion);
-            comando.Parameters.AddWithValue("@idCategoria", p.IDCategoria);
-            comando.Parameters.AddWithValue("@puntaje", p.Puntaje);
-            comando.Parameters.AddWithValue("@nivelDificultad", p.NivelDificultad);
-            comando.Parameters.AddWithValue("@gestor", p.Gestor);
-            comando.Parameters.AddWithValue("@baseDatos", p.BaseDatos);
-            comando.Parameters.AddWithValue("@visibilidad", p.Visibilidad);
-            comando.Parameters.AddWithValue("@fechaCreacion", p.FechaCreacion);
-            comando.Parameters.AddWithValue("@fuente", p.Fuente);
+            comando.Parameters.AddWithValue("@Nombre", p.Nombre);
+            comando.Parameters.AddWithValue("@Descripcion", p.Descripcion);
+            comando.Parameters.AddWithValue("@Solucion", p.Solucion);
+            comando.Parameters.AddWithValue("@IDCategoria", p.IDCategoria);
+            comando.Parameters.AddWithValue("@Puntaje", p.Puntaje);
+            comando.Parameters.AddWithValue("@NivelDificultad", p.NivelDificultad);
+            comando.Parameters.AddWithValue("@Gestor", p.Gestor);
+            comando.Parameters.AddWithValue("@BaseDatos", p.BaseDatos);
+            comando.Parameters.AddWithValue("@Visibilidad", p.Visibilidad);
+            comando.Parameters.AddWithValue("@FechaCreacion", p.FechaCreacion);
+            comando.Parameters.AddWithValue("@Fuente", p.Fuente);
 
             try
             {
@@ -80,51 +88,34 @@ namespace ProyectoBD.BACKEND
 
         public bool ActualizarProblema(clsProblemas p)
         {
-            MySqlConnection conexion = new MySqlConnection();
-            conexion.ConnectionString = "server=4.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=15538"; //Actualizar
-            conexion.Open();
+           
             // TODO: Corregir ISSUE #3
-            string cadena = "update Problemas "
-                + "set Nombre = @nombre, Descripcion = @descripcion, Solucion = @solucion, "
-                + "IDCategoria = @idCategoria, Puntaje = @puntaje, NivelDificultad = @nivelDificultad, "
-                + "Gestor = @gestor, BaseDatos = @baseDatos, Visibilidad = @visibilidad, "
-                + "fechaCreacion = @fechaCreacion, Fuente = @fuente"
-                + "where IDProblema = @id";
-            MySqlCommand comando = new MySqlCommand(cadena, conexion);
-            comando.Parameters.AddWithValue("@nombre", p.Nombre);
-            comando.Parameters.AddWithValue("@descripcion", p.Descripcion);
-            comando.Parameters.AddWithValue("@solucion", p.Solucion);
-            comando.Parameters.AddWithValue("@idCategoria", p.IDCategoria);
-            comando.Parameters.AddWithValue("@puntaje", p.Puntaje);
-            comando.Parameters.AddWithValue("@nivelDificultad", p.NivelDificultad);
-            comando.Parameters.AddWithValue("@gestor", p.Gestor);
-            comando.Parameters.AddWithValue("@baseDatos", p.BaseDatos);
-            comando.Parameters.AddWithValue("@visibilidad", p.Visibilidad);
-            comando.Parameters.AddWithValue("@fechaCreacion", p.FechaCreacion);
-            comando.Parameters.AddWithValue("@fuente", p.Fuente);
-            comando.Parameters.AddWithValue("@id", p.IDProblema);
+            MySqlCommand update=new MySqlCommand(@"update Problemas 
+                set Nombre = @nombre, Descripcion = @descripcion, Solucion = @solucion, 
+                IDCategoria = @idCategoria, Puntaje = @puntaje, NivelDificultad = @nivelDificultad, 
+                Gestor = @gestor, BaseDatos = @baseDatos, Visibilidad = @Visibilidad, Fuente = @fuente
+                where IDProblema = @IDProblema");
 
-            try
-            {
-                comando.ExecuteNonQuery();
-            }
-            catch (MySqlException ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                conexion.Close();
-                conexion.Dispose();
-            }
-            return true;
+            update.Parameters.AddWithValue("@IDProblema", p.IDProblema);
+            update.Parameters.AddWithValue("@nombre", p.Nombre);
+            update.Parameters.AddWithValue("@descripcion", p.Descripcion);
+            update.Parameters.AddWithValue("@solucion", p.Solucion);
+            update.Parameters.AddWithValue("@idCategoria", p.IDCategoria);
+            update.Parameters.AddWithValue("@puntaje", p.Puntaje);
+            update.Parameters.AddWithValue("@nivelDificultad", p.NivelDificultad);
+            update.Parameters.AddWithValue("@gestor", p.Gestor);
+            update.Parameters.AddWithValue("@baseDatos", p.BaseDatos);
+            update.Parameters.AddWithValue("@Visibilidad", p.Visibilidad);
+            update.Parameters.AddWithValue("@fuente", p.Fuente);
+
+            int res = Conexion.ejecutarSentencia(update);
+            
+            return (res>0);
         }
 
 
         public DataTable obtenerNivelDif()
         {
-            
-
             MySqlCommand consulta =
                 new MySqlCommand(@"SELECT NivelDificultad
                     FROM Problemas");
@@ -133,8 +124,6 @@ namespace ProyectoBD.BACKEND
 
         public DataTable obtenerGestor()
         {
-
-
             MySqlCommand consulta =
                 new MySqlCommand(@"SELECT Gestor
                     FROM Problemas");
@@ -144,11 +133,11 @@ namespace ProyectoBD.BACKEND
         public List<clsProblemas> ListaProblemas()
         {
             MySqlConnection conexion = new MySqlConnection();
-            conexion.ConnectionString = "server=4.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=15538"; //Actualizar
+            conexion.ConnectionString = "server=8.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=11863"; //Actualizar
             conexion.Open(); //TODO: Puede arrojar EXCEPTION
 
             string cadena = "select * from Problemas";
-            
+
             MySqlDataAdapter da = new MySqlDataAdapter(cadena, conexion);
             DataSet ds = new DataSet();
             da.Fill(ds, "problemas");
@@ -173,6 +162,37 @@ namespace ProyectoBD.BACKEND
             }
 
             return lstProblemas;
+        }
+
+
+        public clsProblemas obtenerProblema(String idProblema) {
+                MySqlCommand consulta =
+                    new MySqlCommand(@"SELECT * from Problemas
+                            WHERE IDProblema=@IDProblema");
+            consulta.Parameters.AddWithValue("@IDProblema",idProblema);
+            DataTable resultado = Conexion.ejecutarConsulta(consulta);
+            if (resultado != null && resultado.Rows.Count > 0)
+            {
+                DataRow fila = resultado.Rows[0];
+                clsProblemas problema = new clsProblemas()
+                {
+                    IDProblema = Convert.ToInt32(idProblema),
+                    Nombre = fila["Nombre"].ToString(),
+                    Descripcion = fila["Descripcion"].ToString(),
+                    Solucion = fila["Solucion"].ToString(),
+                    IDCategoria = Convert.ToInt32(fila["IDCategoria"].ToString()),
+                    Puntaje = Convert.ToInt32(fila["Puntaje"].ToString()),
+                    NivelDificultad = fila["NivelDificultad"].ToString(),
+                    Gestor = fila["Gestor"].ToString(),
+                    BaseDatos = fila["BaseDatos"].ToString(),
+                    Visibilidad = fila["Visibilidad"].ToString(),
+                    FechaCreacion = Convert.ToDateTime(fila["FechaCreacion"]),
+                    Fuente = fila["Fuente"].ToString()
+                };
+                return problema;
+            }
+            else
+                return null;
         }
     }
 }

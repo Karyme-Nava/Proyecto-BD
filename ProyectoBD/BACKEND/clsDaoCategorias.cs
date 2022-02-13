@@ -16,7 +16,7 @@ namespace ProyectoBD.BACKEND
         public bool EliminarCategoria(clsCategorias c)
         {
             MySqlConnection conexion = new MySqlConnection();
-            conexion.ConnectionString = "server=8.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=12723"; //Actualizar
+            conexion.ConnectionString = "server=8.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=11863"; //Actualizar
             conexion.Open();
 
             string cadena = "delete from Categorias where IDCategoria = @id";
@@ -125,7 +125,7 @@ namespace ProyectoBD.BACKEND
         public List<clsCategorias> ListaCategorias()
         {
             MySqlConnection conexion = new MySqlConnection();
-            conexion.ConnectionString = "server=8.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=12723"; //Actualizar
+            conexion.ConnectionString = "server=8.tcp.ngrok.io;uid=myuser;pwd=myuser;database=bdProblemas;port=11863"; //Actualizar
             conexion.Open();
 
             string cadena = "select * from Categorias";

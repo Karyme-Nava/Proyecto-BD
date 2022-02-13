@@ -70,7 +70,6 @@ D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\
 D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\System.Memory.xml
 D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\System.Numerics.Vectors.xml
 D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.csproj.AssemblyReference.cache
 D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.FRONTEND.frmAgregarCategoria.resources
 D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.FRONTEND.frmAgregarProblema.resources
 D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.FRONTEND.frmCategorias.resources
@@ -81,6 +80,9 @@ D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\
 D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.csproj.CoreCompileInputs.cache
 D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.exe
 D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.pdb
+<<<<<<< HEAD
+D:\adria\ITSUR\Itsur 6to semestre\Admon. BD\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.csproj.AssemblyReference.cache
+=======
 C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\ProyectoBD.exe.config
 C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\ProyectoBD.exe
 C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\bin\Debug\ProyectoBD.pdb
@@ -118,3 +120,4 @@ C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\P
 C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.csproj.CopyComplete
 C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.exe
 C:\Users\Karyme Nava\Documents\Semestre 6\Administración de bases de datos\U2\Proyecto-BD\ProyectoBD\obj\Debug\ProyectoBD.pdb
+>>>>>>> cfae78b96b4fd6de4685d99aecd4e93109066dc0
