@@ -194,22 +194,19 @@ namespace ProyectoBD.FRONTEND
             }
 
             string dificultad = "";
-            try
-            {
+            if (cbDificultad.SelectedIndex != -1)
                 dificultad = cbDificultad.SelectedItem.ToString();
-            }
-            catch (Exception ex)
+            else
             {
                 MessageBox.Show("Debes seleccionar un nivel de dificultad", "Datos incorrectos");
                 return null;
             }
+           
 
             string gestor = "";
-            try
-            {
+            if (cbGestor.SelectedIndex != -1)
                 gestor = cbGestor.SelectedItem.ToString();
-            }
-            catch (Exception ex)
+            else
             {
                 MessageBox.Show("Debes seleccionar un gestor", "Datos incorrectos");
                 return null;
